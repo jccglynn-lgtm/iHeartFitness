@@ -1,0 +1,115 @@
+/*background gradient and general styles*/
+body {
+  background: linear-gradient(135deg, #e6f9f0, #c8f0d8, #e6faff);
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin: 40px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #22aa44;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h2 {
+  color: #28a745;
+  margin-top: 30px;
+
+
+}
+
+hr {
+  width: 60%;
+  margin: 20px auto;
+  border: 1px solid #22aa44;
+  position: absolute;
+  margin-left: 20px ;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 150px;
+}
+
+button, input[type="submit"] {
+  background-color: #22aa44;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+button:hover, input[type="submit"]:hover {
+  background-color: #1d8b3a;
+                        }
+                        .top-bar {
+position: fixed;
+top: 0;
+width: 100%;
+left : 0;
+z-index: 1000;
+background: linear-gradient(135deg, #e6f9f0, #c8f0d8, #e6faff)
+}
+.text {
+position: relative;
+margin-left: 20px ;
+margin-bottom: 20px ;
+
+                        }
+ /*------------------------------------------------------------------------*/
+                        /*headers for topics*/
+    /* Nutrition header*/    .header1 { 
+                  text-align: left;
+                  font-family: 'Arial', sans-serif;
+                                    }
+   /* all headers*/    .header2 { 
+                  text-align: left;
+                  font-family: 'Arial', sans-serif;
+                                          }
+
+                                  .Title { /*main header of website*/
+                                    font-size: 48px;
+                                    font-weight: bold;
+                                    color: #7700ff;
+                                    text-align: left;
+                                    margin-top: 20px;
+                                    font-family: italic;
+                                                      }
+                                                .btn {
+                                                  background-color: #28a745;
+                                                  color: white;
+                                                  padding: 8px 16px;
+                                                  border-radius: 6px;
+                                                  text-decoration: none;
+                                                  font-weight: bold;
+                                                  margin-left: 10px;
+                                                  transition: 0.3s;
+                                                }
+
+                                                  .btn:hover {
+                                                    background-color: #1f7d39;
+                                                  }
+                                                  nav {
+                                                      text-align: center;
+                                                      margin-bottom: 20px;
+                                                  }
+                                                                    .mini-window {
+                                                                    font-weight: bold;
+                                                                      font-size: 18px;
+                                                                    background-color: #0000ff;
+                                                                    color: white;
+                                                                      margin-top: 10px;
+                                                                      text-align: right;
+                                                                      float: right;
+                                                                      margin-right: 24px;
+                                                                  }
