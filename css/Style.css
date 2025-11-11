@@ -1,0 +1,22 @@
+.Phi_tness_logo {
+    font-size: 40px;
+    color: #2EF2B2;
+}
+/* Logo font */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+}
+/* Header font */
+
+.logo-container img {
+    height: 75px;
+    width: auto;
+}
+
+.main-header {
+    padding-left: 25px;
+}
