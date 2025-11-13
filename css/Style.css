@@ -1,3 +1,22 @@
+/* For buttons */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* For logo */
+
 .Phi_tness_logo {
     font-size: 40px;
     color: #2EF2B2;
