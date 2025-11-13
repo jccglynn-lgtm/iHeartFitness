@@ -60,15 +60,38 @@
 
 @media(max-width: 1024px) {
     .main-header {
-        flex-direction: column;
-        gap: 20px;
+        padding: 15px 20px;
+    }
+    .Phi_tness_logo {
+        font-size: 20px;
     }
     .homepage-buttons {
-        flex-direction: column;
-        width: 100%;
+        gap: 10px;
     }
     .btn {
-        width: 100%;
-        text-align: center;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+@media(max-width: 767px) {
+    .main-header {
+        padding: 10px 15px;
+    }
+    .logo-container {
+        gap: 8px;
+    }
+    .logo-container img {
+        width: 35px;
+        height: 35px;
+    }
+    .Phi_tness_logo {
+        font-size: 16px;
+    }
+    .homepage-buttons {
+        gap: 6px;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
     }
 }
