@@ -5,24 +5,27 @@
 }
 
 /* buttons */
-
+/* Homepage buttons using dynamic sizing */
 .homepage-buttons {
+    grid-column: 2;
     display: flex;
-    gap: 15px;
+    gap: clamp(8px, 3vw, 60px);
 }
 .btn {
     display: inline-block;
-    padding: 12px 30px;
-    background: #667eea;
-    color: white;
+    padding: 15px 50px;
+    background: #dadada;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 26px;
     font-weight:bold;
-    border-radius: 8px;
+    border-radius: 50px;
     transition: all 0.3s ease;
+    border: #000000 3px solid;
 }
 .btn:hover {
-    background: #5568d3;
+    background: #000000;
+    color:#ffffff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
@@ -30,10 +33,14 @@
 /* For logo */
 
 .Phi_tness_logo {
-    font-size: 40px;
-    color: #2EF2B2;
+    font-size: 80px;
+    color: #000000;
 }
-/* Logo font */
+.Phi_tness_logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -41,7 +48,6 @@
     text-decoration: none;
     color: black;
 }
-/* Header font */
 
 .logo-container img {
     height: 75px;
@@ -49,49 +55,77 @@
 }
 
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 25px 20px 40px;
-    background-color: #2D3748;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f1f1f1;
 }
 
-/* RESPONSIVE */
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 2.9fr auto 1fr;
+    align-items: center; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* responsive design different devices */
 
 @media(max-width: 1024px) {
     .main-header {
-        padding: 15px 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .header-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .Phi_tness_logo {
-        font-size: 20px;
+        font-size: 45px;
+    }    
+    .logo-container img {
+        height: 50px;
     }
-    .homepage-buttons {
-        gap: 10px;
-    }
+    
     .btn {
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 25px;
     }
 }
+
+
 @media(max-width: 767px) {
     .main-header {
-        padding: 10px 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-    .logo-container {
-        gap: 8px;
+    .header-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        /* FIXED: Corrected the typo */
+        grid-template-columns: 1fr;
+        /* ADDED: These stack and center your mobile layout */
+        justify-items: center;
+        gap: 15px;
     }
+    
+    .logo-container,
+    .homepage-buttons {
+        /*using 1st column on grid*/
+        grid-column: 1;
+    }
+
     .logo-container img {
-        width: 35px;
+        width: auto;
         height: 35px;
     }
     .Phi_tness_logo {
-        font-size: 16px;
+        font-size: 30px;
     }
     .homepage-buttons {
-        gap: 6px;
+        gap: 32px;
     }
     .btn {
         padding: 8px 12px;
-        font-size: 12px;
+        font-size: 20px;
     }
 }
