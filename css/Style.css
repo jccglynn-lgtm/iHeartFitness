@@ -109,10 +109,6 @@
     }
     
     .logo-container,
-    .homepage-buttons {
-        /*using 1st column on grid*/
-        grid-column: 1;
-    }
 
     .logo-container img {
         width: auto;
