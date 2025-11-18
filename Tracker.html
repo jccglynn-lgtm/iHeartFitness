@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Phi.tness - Tracker </title>
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Tracker.css">
 </head>
 <body>
 
@@ -20,14 +21,40 @@
                 <a href="index.html">Phi.tness</a>
             </h1>
         </div>
-        
+<!-- Buttons for homepage -->       
         <div class="homepage-buttons">
             <a href="Health.html" class="btn">Health</a>
             <a href="Nutrition.html" class="btn">Nutrition</a>
             <a href="Tracker.html" class="btn">Tracker</a>
         </div>
         
-    </div> </header>
-    
+    </div>
+</header>
+
+<section class="tracker">
+    <div class="tracker-tabs">
+        <button class="tracker-tab active" data-tab="water">Water</button>
+        <button class="tracker-tab" data-tab="workout">Workout</button>
+        <button class="tracker-tab" data-tab="calories">Calories</button>
+    </div>
+    <!--panels for calculations-->
+    <div class="tracker-panel active" id="water">
+        <p>Select how much water you have consumed today</p>
+        <div id="water-box" class="click-box">  <!-- ClickBoxes for tabs-->
+            100 ml
+        </div>
+        <div id="water-box" class="click-box">
+            200 ml
+        </div>
+        <p>Total ml: <span id="water-total">0</span></p>
+    </div>
+    <div class="tracker-panel" id="workout">
+        <p>Test</p>
+    </div>
+    <div class="tracker-panel" id="calories">
+        <p>Water tracker test content</p>
+    </div>    
+</section>
+<script src="js/Tracker.js"></script>
 </body>
 </html>
