@@ -62,6 +62,7 @@ background: linear-gradient(135deg, #e6f9f0, #c8f0d8, #e6faff)
 }
 .text {
 position: relative;
+text-align: left;
 margin-left: 20px ;
 margin-bottom: 20px ;
 

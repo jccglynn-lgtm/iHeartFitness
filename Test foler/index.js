@@ -14,3 +14,22 @@ function calculateBMI() {
         alert("You are obese. It's advisable to seek guidance from a healthcare professional for a comprehensive health plan.");
     }
 }
+function signup(){
+let email = document.getElementById("email").value;
+let password = document.getElementById("psw").value;
+let repeatPassword = document.getElementById("psw-repeat").value;
+if(!email || !password || !repeatPassword){
+    alert("Please fill in all fields.");
+    return;
+}
+if(password !== repeatPassword){
+    alert("Passwords do not match.");
+    return;
+}
+localStorage.setItem("email", email);
+localStorage.setItem("password", password);
+localStorage.setItem("emaail", email);
+alert("Registration successful! Please log in.");
+window.location.href = "login.html";
+    }
+    
