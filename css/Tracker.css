@@ -1,5 +1,5 @@
-.tracker {
-    width: clamp(300px, 40vw, 1400px);
+.tracker {/* Surrounding tracker box*/
+    width: clamp(300px, 40vw, 1400px); /*Dynamic sizing*/
     margin: 3rem 0 0 3rem;
     border: 1px solid #626262;
     border-radius: clamp(8px, 1vw, 25px);
@@ -32,7 +32,7 @@
 .tracker-panel.active {
     display: block;
 }
-.click-box {
+.click-box { /*Click box styling*/
     width: 150 px;
     padding: .4rem 1rem;
     background: #e0f7ff;
