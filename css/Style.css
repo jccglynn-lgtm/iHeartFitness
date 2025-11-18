@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +31,6 @@
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-/* For logo */
 
 .Phi_tness_logo {
     font-size: 80px;
@@ -48,11 +48,12 @@
     text-decoration: none;
     color: black;
 }
-
 .logo-container img {
     height: 75px;
     width: auto;
 }
+
+/* HEADER */
 
 .main-header {
     padding-top: 20px;

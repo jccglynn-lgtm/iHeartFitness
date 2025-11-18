@@ -1,0 +1,45 @@
+.tracker {/* Surrounding tracker box*/
+    width: clamp(300px, 40vw, 1400px); /*Dynamic sizing*/
+    margin: 3rem 0 0 3rem;
+    border: 1px solid #626262;
+    border-radius: clamp(8px, 1vw, 25px);
+    padding: clamp(10px, 2vw, 40px);
+    font-size: clamp(0.9rem, 1vw, 1.4rem);
+    gap: clamp(8px, 2vw, 40px);
+}
+.tracker-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.tracker-tab {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #eee;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.tracker-tab.active {
+    background: #fff;
+}
+.tracker-panel {
+    display: none;
+    border-top: 1px solid #ccc;
+    padding-top: .5rem;
+}
+.tracker-panel.active {
+    display: block;
+}
+.click-box { /*Click box styling*/
+    width: 150 px;
+    padding: .4rem 1rem;
+    background: #e0f7ff;
+    border: 2px solid #60c0ff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: background 0.2s;
+}
