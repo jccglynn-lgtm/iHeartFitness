@@ -1,4 +1,6 @@
+   //==========================
    //BMI calculator on java script
+   //==========================
 function calculateBMI() {
     let weight = parseFloat(document.getElementById("weight").value);
     let height = parseFloat(document.getElementById("height").value);
@@ -14,6 +16,9 @@ function calculateBMI() {
         alert("You are obese. It's advisable to seek guidance from a healthcare professional for a comprehensive health plan.");
     }
 }
+    //==========================    
+    // Signup function
+    //==========================
 function signup(){
 let email = document.getElementById("email").value;
 let password = document.getElementById("psw").value;
@@ -28,8 +33,23 @@ if(password !== repeatPassword){
 }
 localStorage.setItem("email", email);
 localStorage.setItem("password", password);
-localStorage.setItem("emaail", email);
 alert("Registration successful! Please log in.");
 window.location.href = "login.html";
     }
-    
+    //==========================
+    // Login function
+    //==========================
+function login(){
+let email = document.getElementById("mail").value;
+let password = document.getElementById("pw").value;
+let storedEmail = localStorage.getItem("email");
+let storedPassword = localStorage.getItem("password");
+if(email === storedEmail && password === storedPassword)
+{
+    alert("Login successful!");
+    window.location.href = "accountPage.html";
+}
+else{
+    alert("Invalid email or password.");
+}
+}
