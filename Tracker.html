@@ -40,12 +40,32 @@
     <!--panels for calculations-->
     <div class="tracker-panel active" id="water">
         <p>Select how much water you have consumed today</p>
-        <div id="water-box" class="click-box">  <!-- ClickBoxes for tabs-->
-            100 ml
-        </div>
-        <div id="water-box" class="click-box">
-            200 ml
-        </div>
+    
+    <div class="water-row">
+        <div class="water-box" data-value="100"></div><!-- ClickBoxes for tabs-->
+        <span>100 ml</span>
+        <img src="images/Water_Drop.png" class="water-icon">  <!-- Text to go alongside box-->
+    </div>    
+    <div class="water-row">
+        <div class="water-box" data-value="250"></div>
+        <span>250 ml</span>  
+        <img src="images/Water_Cup.png" class="water-icon">  
+    </div> 
+    <div class="water-row">
+        <div class="water-box" data-value="500"></div>
+        <span>500 ml</span>
+        <img src="images/Water_Jug.png"  class="water-icon">
+    </div>
+    <div class="water-row">
+        <div class="water-box" data-value="1000"></div>
+        <span>1 L</span>
+        <img src="images/Water_bottle.png"  class="water-icon">
+    </div>
+    <div class="water-row">
+        <input type="number" class="custom-input" placeholder="ml">
+        <span>custom ml</span>
+        <img src="images/Question_bottle.png"  class="water-icon">
+    </div>       
         <p>Total ml: <span id="water-total">0</span></p>
     </div>
     <div class="tracker-panel" id="workout">
