@@ -4,9 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
 
 /* buttons */
 /* Homepage buttons using dynamic sizing */
+
 .homepage-buttons {
     grid-column: 2;
     display: flex;
@@ -14,27 +26,32 @@
 }
 .btn {
     display: inline-block;
-    padding: 15px 50px;
-    background: #dadada;
-    color: rgb(0, 0, 0);
+    padding: 10px 50px;
+    background: black;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 26px;
-    font-weight:bold;
+    font-size: 20px;
+    font-weight:600;
     border-radius: 50px;
     transition: all 0.3s ease;
-    border: #000000 3px solid;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 .btn:hover {
-    background: #000000;
+    background: #1557b0;
     color:#ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+.btn:active {
+    transform: translateY(0);
 }
 
-/* LOGO AND LOGO NAME */
+/* Logo & Logo Name */
 
 .Phi_tness_logo {
-    font-size: 80px;
+    font-size: 32px;
     color: #000000;
 }
 .Phi_tness_logo a {
@@ -54,12 +71,16 @@
     width: auto;
 }
 
-/* HEADER */
+/* Header */
 
 .main-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #f1f1f1;
+    padding: 10px 0;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-wrapper {
@@ -68,6 +89,57 @@
     align-items: center; 
     padding-left: 25px;
     padding-right: 25px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    padding: 200px 20px;
+}
+.hero-content {
+    text-align: center;
+}
+.hero-title {
+    font-size: 100px;
+    font-weight: 800;
+    color:#1a1a1a;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hero-btn {
+    display: inline-block;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Primary Button */
+
+.hero-btn.primary {
+    background: #f8f9fa;
+    color: #667eea;
+}
+.hero-btn.secondary {
+    background: #f8f9fa;
+    color: #667eea;
 }
 
 /* responsive design different devices */
@@ -91,6 +163,9 @@
     .btn {
         padding: 10px 20px;
         font-size: 25px;
+    }
+    .hero-title {
+        font-size: 64px;
     }
 }
 
@@ -126,5 +201,12 @@
     .btn {
         padding: 8px 12px;
         font-size: 20px;
+    }
+    .hero-scetion {
+        min-height: 60vh;
+        padding: 40px 20px;
+    }
+    .hero-title {
+        font-size: 48px;
     }
 }
