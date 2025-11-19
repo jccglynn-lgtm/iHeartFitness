@@ -5,6 +5,27 @@
     <title>phi.tness/diet</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<nav class="top-bar">
+    <div class="nav-wrapper">
+
+        <!-- LEFT SIDE: Logo -->
+        <h1 class="Title"><i>Φ.Phitnes</i></h1>
+
+        <!-- CENTER: TABS -->
+        <div class="nav-tabs">
+            <a href="health.html" class="btn">Health</a>
+            <a href="tracker.html" class="btn">Tracker</a>
+            <a href="nutrition.html" class="btn">Nutrition</a>
+        </div>
+
+        <!-- RIGHT SIDE: Login buttons -->
+        <div class="nav-auth">
+            <a href="login.html" class="btn small-btn">Login</a>
+            <a href="sign-in.html" class="btn small-btn">Sign In</a>
+        </div>
+
+    </div>
+</nav>
 <body>
     <script src="index.js"></script>
     <div class = "box">
@@ -12,18 +33,23 @@
     <div class container>
         <h1>Register</h1>
         <p> Please fill in this form to create an account.</p>
-        <hr>
-
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-<label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-
-        <label for="psw-repeat"></label>
-        <button onclick="signup()" type="submit" class="registerbtn">Register</button>
+        <div class="input-group">
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+        </div>
+            <div class="input-group">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            </div>
+            <div class="input-group">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            </div>
+               <div class="input-group">
+                    <label for="psw-repeat"><b><br>Repeat Password</b></label><br></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                </div>
+        <button onclick="signup()" type="button" class="registerbtn">Register</button>
     </div>
     <div class="container signin">
         <p>Already have an account? <a href="login.html">log in</a>.</p>

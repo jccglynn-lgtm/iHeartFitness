@@ -5,18 +5,41 @@
     <title>phi.tness/diet</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<nav class="top-bar">
+    <div class="nav-wrapper">
+
+        <!-- LEFT SIDE: Logo -->
+        <h1 class="Title"><i>Φ.Phitnes</i></h1>
+
+        <!-- CENTER: TABS -->
+        <div class="nav-tabs">
+            <a href="health.html" class="btn">Health</a>
+            <a href="tracker.html" class="btn">Tracker</a>
+            <a href="nutrition.html" class="btn">Nutrition</a>
+        </div>
+
+        <!-- RIGHT SIDE: Login buttons -->
+        <div class="nav-auth">
+            <a href="login.html" class="btn small-btn">Login</a>
+            <a href="sign-in.html" class="btn small-btn">Sign In</a>
+        </div>
+
+    </div>
+</nav>
 <body>
     <div class = "box">
   <form onsubmit="login(); return false;">
     <script src="index.js"></script>
+    <div class="input-group">
   <label for="email">Email: </label>
   <input type="mail" id="mail" name="mail">
-  <br/>
+  </div>
+  <div class="input-group">
   <label for="pw">Password: </label>
   <input type="password" id="pw" name="pw">
-  <br/>
-  <button onclick="login()" type="submit" class="loginbtn">Login</button>
-  <br/>
+</div>
+  <button onclick="login()" type="button" class="loginbtn">Login</button>
+
   <input type="checkbox" id="ck" name="ck">
   <label for="ck">Remember me</label>
 </form>

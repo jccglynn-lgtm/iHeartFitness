@@ -23,7 +23,9 @@ function signup(){
 let email = document.getElementById("email").value;
 let password = document.getElementById("psw").value;
 let repeatPassword = document.getElementById("psw-repeat").value;
-if(!email || !password || !repeatPassword){
+let name = document.getElementById("name").value;
+
+if(!email || !password || !repeatPassword || !name){
     alert("Please fill in all fields.");
     return;
 }
@@ -33,6 +35,7 @@ if(password !== repeatPassword){
 }
 localStorage.setItem("email", email);
 localStorage.setItem("password", password);
+localStorage.setItem("name", name);
 alert("Registration successful! Please log in.");
 window.location.href = "login.html";
     }
@@ -54,3 +57,14 @@ else{
     return;
 }
 }
+// ==========================
+// Account Page Load Function
+// ==========================
+function loadAccountPage(){
+    let storedName = localStorage.getItem("name");
+    document.getElementById("welcomeMessage").innerText = "Welcome, " + storedName + "!";
+
+}
+// ==========================
+//tracker function
+// ==========================

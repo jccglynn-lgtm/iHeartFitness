@@ -5,11 +5,39 @@
     <title>phi.tness/diet</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
     <form onsubmit="login(); return false;">
     <script src="index.js"></script>
-    <label for="email">Email: </label>
-    <input type="mail" id="mail" name="mail">
-    <br/>
-<h1>Account Page</h1>
-<p>Welcome to your account page!</p>
+<nav class="top-bar">
+    <div class="nav-wrapper">
+
+        <!-- LEFT SIDE: Logo -->
+        <h1 class="Title"><i>Φ.Phitnes</i></h1>
+
+        <!-- CENTER: TABS -->
+        <div class="nav-tabs">
+            <a href="health.html" class="btn">Health</a>
+            <a href="tracker.html" class="btn">Tracker</a>
+            <a href="nutrition.html" class="btn">Nutrition</a>
+        </div>
+
+        <!-- RIGHT SIDE: Login buttons -->
+        <div class="nav-auth">
+            <a href="login.html" class="btn small-btn">Login</a>
+            <a href="sign-in.html" class="btn small-btn">Sign In</a>
+        </div>
+
+    </div>
+</nav>
+<body>
+    <h1>Account Page</h1>
+<h2>your account details go here.</h2>
+<label for="email">Email: </label>
+  <span id="mail"></span>
+  <br/>
+    <label for="pw">Password: </label>
+    <span id="pw"></span>
+
+
+</body>
+
+</html>
