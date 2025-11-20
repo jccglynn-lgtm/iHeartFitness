@@ -104,7 +104,7 @@ body {
     text-align: center;
 }
 .hero-title {
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 800;
     color:#1a1a1a;
     line-height: 1.2;
@@ -134,12 +134,39 @@ body {
 /* Primary Button */
 
 .hero-btn.primary {
-    background: #f8f9fa;
+    background: white;
     color: #667eea;
 }
 .hero-btn.secondary {
-    background: #f8f9fa;
+    background: white;
     color: #667eea;
+}
+
+/* About Us */
+
+.about-section {
+    padding: 100px 20px;
+    background: #ffffff;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.section-title {
+    font-size: 70px;
+    font-weight: 800;
+    color:#1a1a1a;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+.section-text {
+    font-size: 22.5px;
+    color: #4a5568;
+    text-align: center;
+    line-height: 1.8;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* responsive design different devices */
@@ -166,6 +193,15 @@ body {
     }
     .hero-title {
         font-size: 64px;
+    }
+    .about-section {
+        padding: 80px 20px;
+    }
+    .section-title {
+        font-size: 40px;
+    }
+    .section-text {
+        font-size: 17px;
     }
 }
 
@@ -208,5 +244,16 @@ body {
     }
     .hero-title {
         font-size: 48px;
+    }
+    .about-section {
+        padding: 60px 20px;
+    }
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .section-text {
+        font-size: 16px;
+        line-height: 1.7;
     }
 }
