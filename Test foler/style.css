@@ -1,220 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
-/* ------------------------------------------------------------ */
-/* BACKGROUND + TEXT STYLE (blue theme)                         */
-/* ------------------------------------------------------------ */
+/* Body */
+
 body {
-    background: linear-gradient(135deg, #e6faff, #d9f3ff, #eaf9ff);
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    color: #003d73;
-    padding-top: 140px;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
 }
 
-h1, h2 {
-    text-align: start;
-    color: #003d73;
-}
+/* buttons */
+/* Homepage buttons using dynamic sizing */
 
-.Title {
-    font-size: 48px;
-    font-weight: bold;
-    color: #003d73;
-    text-align: left;
-    font-family: Montserrat, sans-serif;
+.homepage-buttons {
+    grid-column: 2;
+    display: flex;
+    gap: clamp(8px, 3vw, 60px);
 }
-
-/* ------------------------------------------------------------ */
-/* .btn STYLE (blue buttons)                                    */
-/* ------------------------------------------------------------ */
-.btn,
-.register-btn {
+.btn {
     display: inline-block;
-    padding: 14px 40px;
-    font-size: 26px;
-    font-weight: bold;
-    border-radius: 50px;
-    border: 3px solid #66c2ff;
-    background: linear-gradient(135deg, #d3f0ff, #e7faff);
-    color: #003d73;
-    cursor: pointer;
-    transition: 0.35s ease;
+    padding: 10px 50px;
+    background: black;
+    color: #ffffff;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(102, 194, 255, 0.25);
-}
-
-.btn:hover,
-.register-btn:hover {
-    background: linear-gradient(135deg, #66c2ff, #4db6ff);
-    color: white;
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 6px 18px rgba(102, 194, 255, 0.45), 0 0 14px rgba(102, 194, 255, 0.5);
-}
-
-.btn:active,
-.register-btn:active {
-    transform: scale(0.96);
-}
-
-/* Smaller login/sign-in buttons */
-.small-btn {
-    padding: 10px 20px;
     font-size: 20px;
-    border-width: 2px;
+    font-weight:600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.btn:hover {
+    background: #1557b0;
+    color:#ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+.btn:active {
+    transform: translateY(0);
 }
 
-/* ------------------------------------------------------------ */
-/* NAVIGATION BAR (blue gradient)                               */
-/* ------------------------------------------------------------ */
-.top-bar {
-    background: linear-gradient(135deg, #e6faff, #d9f3ff, #eaf9ff);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
+/* Logo & Logo Name */
+
+
+.Phi_tness_logo {
+    font-size: 32px;
+    color: #000000;
+}
+.Phi_tness_logo a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.nav-wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+.logo-container {
+    display: flex;
     align-items: center;
-    padding: 15px 25px;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+}
+.logo-container img {
+    height: 75px;
+    width: auto;
 }
 
-/* Center Tabs */
-.nav-tabs {
+/* Header */
+
+.main-header {
+    padding: 10px 0;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 2.9fr auto 1fr;
+    align-items: center; 
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    min-height: 80vh;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    background: #ffffff;
+    padding: 200px 20px;
 }
-
-/* Right side login/sign-in */
-.nav-auth {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-}
-
-/* ------------------------------------------------------------ */
-/* MOBILE NAVIGATION                                             */
-/* ------------------------------------------------------------ */
-@media (max-width: 767px) {
-
-    .nav-wrapper {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        text-align: center;
-        padding: 12px 8px;
-    }
-
-    .nav-tabs,
-    .nav-auth {
-        justify-content: center;
-    }
-
-    .btn {
-        padding: 8px 18px;
-        font-size: 18px;
-        border-width: 2px;
-    }
-
-    .small-btn {
-        padding: 8px 15px;
-        font-size: 18px;
-    }
-
-    .Title {
-        font-size: 32px;
-    }
-}
-
-/* ------------------------------------------------------------ */
-/* MAIN CONTENT STYLE                                           */
-/* ------------------------------------------------------------ */
-.text {
-    text-align: left;
-    margin: 20px;
-    color: #003d73;
-}
-
-/* ------------------------------------------------------------ */
-/* FORM + INPUT FIELD STYLE (blue form)                         */
-/* ------------------------------------------------------------ */
-.form-container {
-    width: 100%;
-    max-width: 420px;
-    margin: 20px auto;
-    padding: 20px 25px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 14px;
-    box-shadow: 0 4px 18px rgba(102, 194, 255, 0.25);
-    border: 2px solid #c5eaff;
-}
-
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-}
-
-.input-group label {
-    font-size: 18px;
-    font-weight: bold;
-    color: #003d73;
-    margin-bottom: 6px;
-}
-
-.input-group input {
-    padding: 12px;
-    font-size: 17px;
-    border-radius: 8px;
-    border: 2px solid #a8dcff;
-    background: #f0f9ff;
-    transition: 0.25s;
-    color: #003d73;
-}
-
-.input-group input:focus {
-    outline: none;
-    border-color: #66c2ff;
-    box-shadow: 0 0 6px rgba(102, 194, 255, 0.4);
-}
-
-.form-button {
-    width: 100%;
-    padding: 12px;
-    font-size: 19px;
-    border: none;
-    border-radius: 8px;
-    background-color: #66c2ff;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.form-button:hover {
-    background-color: #4db6ff;
-}
-
-.form-link {
-    display: block;
+.hero-content {
     text-align: center;
-    margin-top: 12px;
-    font-size: 15px;
-    color: #0066cc;
-    text-decoration: none;
+}
+.hero-title {
+    font-size: 100px;
+    font-weight: 800;
+    color:#1a1a1a;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
 }
 
-.form-link:hover {
-    text-decoration: underline;
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hero-btn {
+    display: inline-block;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Primary Button */
+
+.hero-btn.primary {
+    background: #f8f9fa;
+    color: #667eea;
+}
+.hero-btn.secondary {
+    background: #f8f9fa;
+    color: #667eea;
+}
+
+/* responsive design different devices */
+
+@media(max-width: 1024px) {
+    .main-header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .header-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .Phi_tness_logo {
+        font-size: 45px;
+    }    
+    .logo-container img {
+        height: 50px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 25px;
+    }
+    .hero-title {
+        font-size: 64px;
+    }
+}
+
+
+@media(max-width: 767px) {
+    .main-header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .header-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 15px;
+    }
+    
+    .logo-container,
+    .homepage-buttons {
+        grid-column: 1;
+    }
+
+    .logo-container img {
+        width: auto;
+        height: 35px;
+    }
+    .Phi_tness_logo {
+        font-size: 30px;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 20px;
+    }
+    .hero-scetion {
+        min-height: 60vh;
+        padding: 40px 20px;
+    }
+    .hero-title {
+        font-size: 48px;
+    }
 }
