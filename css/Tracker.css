@@ -1,0 +1,70 @@
+.tracker {/* Surrounding tracker box*/
+    width: clamp(300px, 40vw, 1400px); /*Dynamic sizing*/
+    margin: 3rem 0 0 3rem;
+    border: 1px solid #626262;
+    border-radius: clamp(8px, 1vw, 25px);
+    padding: clamp(10px, 2vw, 40px);
+    font-size: clamp(0.9rem, 1vw, 1.4rem);
+    gap: clamp(8px, 2vw, 40px);
+}
+.tracker-tabs {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.tracker-tab {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #eee;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+.tracker-tab.active {
+    background: #fff;
+}
+.tracker-panel {
+    display: none;
+    border-top: 1px solid #ccc;
+    padding-top: .5rem;
+}
+.tracker-panel.active {
+    display: block;
+}
+.water-box { /*Click box styling*/
+    width: 22px;
+    height: 22px;
+    background: #e0f7ff;
+    border: 2px solid #60c0ff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: .7rem;
+    display: inline-block;
+    transition: background 0.2s;
+}
+.water-row {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: clamp(1.5rem, 1vw, 3rem);
+}
+.water-row span { /* Water images in line */
+    flex: 1;
+    margin-left: .5rem;
+}
+.water-icon { /* Water icons */
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.custom-input {
+    width: 4rem;
+    padding: 1rem .4rem;
+    border: 2px solid #60c0ff;
+    border-radius: 6px;
+    font-size: clamp(.9rem, 1vw, 1.2rem);
+    margin-right: .7rem;
+}
