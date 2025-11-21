@@ -238,6 +238,77 @@ body {
     margin: 0;
 }
 
+/* Member Spotlight */
+
+.spotlight-section {
+    padding: 100px 20px;
+    background:#ffffff;
+}
+.spotlight-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+/* left side image */ 
+.spotlight-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.spotlight-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+/* right side text */
+.spotlight-content {
+    position: relative;
+    padding-top: 60px;
+}
+/* profile pic */
+.spotlight-profile {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    display: block;
+}
+/* name */
+.member-name {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+/* achievement */
+.member-achievement {
+    font-size: 18px;
+    font-weight: 600;
+    color: grey;
+    margin-bottom: 25px;
+}
+/* Testimony */
+.member-testimony {
+    font-size: 17px;
+    color: #4a5568;
+    line-height: 1.8;
+    font-style: italic;
+    margin: 0;
+}
+
 /* responsive design different devices */
 
 @media(max-width: 1024px) {
@@ -281,6 +352,16 @@ body {
     }
     .section-subtitle {
         margin-bottom: 50px;
+    }
+    .spotlight-wrapper {
+        gap: 40px;
+    }
+    .member-name {
+        font-size: 28px;
+    }
+    .profile-pic {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -347,5 +428,31 @@ body {
     }
     .feature-title {
         font-size: 20px;
+    }
+    .spotlight-section {
+        padding: 60px 20px;
+    }
+    .spotlight-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .spotlight-content {
+        padding-top: 70px;
+    }
+    .spotlight-profile {
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .member-name {
+        font-size: 24px;
+        text-align: center;
+    }
+    .member-achievement {
+        font-size: 16px;
+        text-align: center;
+    }
+    .member-testimony {
+        font-size: 16px;
+        text-align: center;
     }
 }
