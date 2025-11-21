@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>J Health</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    img {
+      width: auto;
+      margin-top: 30px;
+    }
+
+    #infoBox {
+      display: none;
+      width: 80%;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: white;
+      border: 1px solid #ccc;
+      font-size: 18px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<img src="person.png" usemap="#image-map" id="human">
+
+<map name="image-map">
+    <area alt="arms1" title="arms" href="#infoBox"
+          data-text="Arm exercises improve strength, mobility, and endurance."
+          coords="113,189,115,117,87,132,77,165,77,196,67,221,58,242,53,261,39,292,63,305,95,257,105,233" shape="poly">
+
+    <area alt="arms2" title="arms" href="#infoBox"
+          data-text="Training your arms enhances upper-body stability and power."
+          coords="214,193,202,114,234,125,245,155,256,216,272,239,282,265,294,288,273,301,228,244" shape="poly">
+
+    <area alt="chest" title="chest" href="#infoBox"
+          data-text="Chest workouts help build strength and support proper posture."
+          coords="116,120,201,115,212,192,114,194" shape="poly">
+
+    <area alt="core" title="core" href="#infoBox"
+          data-text="Core strengthening improves balance, stability, and spine support."
+          coords="116,193,120,232,112,269,219,269,211,238,216,193" shape="poly">
+
+    <area alt="legs1" title="legs" href="#infoBox"
+          data-text="Leg exercises enhance mobility, power, and endurance."
+          coords="166,334,104,335,115,403,118,426,105,464,111,521,137,523,148,479,145,452,153,415" shape="poly">
+
+    <area alt="legs2" title="legs" href="#infoBox"
+          data-text="Leg training boosts overall body strength and stability."
+          coords="227,335,230,374,222,402,225,434,232,469,224,524,198,521,186,476,192,451,182,422,181,364,177,335" shape="poly">
+</map>
+
+<div id="infoBox"></div>
+
+<script>
+  const areas = document.querySelectorAll("area");
+  const box = document.getElementById("infoBox");
+
+  areas.forEach(function(area) {
+    area.onclick = function() {
+      box.textContent = area.dataset.text;
+      box.style.display = "block";
+    };
+  });
+</script>
+
+</body>
+</html>
