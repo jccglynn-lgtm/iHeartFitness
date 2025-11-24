@@ -26,7 +26,20 @@
     </div>
   </header>
 
-<img src="images/person.png" usemap="#image-map" id="human">
+
+  <div class="content-wrapper">
+    <img src="images/person.png" usemap="#image-map" id="human">
+
+    <div id="pageInfo">
+      <h2>About This Page</h2>
+      <p>
+        This interactive fitness page lets you click on different parts of the human body
+        to learn about exercises that strengthen those areas. Select arms, chest, core, or legs
+        to see tailored workout tips and benefits.
+      </p>
+    </div>
+  </div>
+
 
 <map name="image-map">
     <area alt="arms1" title="arms" href="#infoBox"
@@ -34,7 +47,7 @@
           coords="113,189,115,117,87,132,77,165,77,196,67,221,58,242,53,261,39,292,63,305,95,257,105,233" shape="poly">
 
     <area alt="arms2" title="arms" href="#infoBox"
-          data-text="Training your arms enhances upper-body stability and power."
+          data-text="Training your arms enhances upper-body stability and power." 
           coords="214,193,202,114,234,125,245,155,256,216,272,239,282,265,294,288,273,301,228,244" shape="poly">
 
     <area alt="chest" title="chest" href="#infoBox"
@@ -53,6 +66,7 @@
           data-text="Leg training boosts overall body strength and stability."
           coords="227,335,230,374,222,402,225,434,232,469,224,524,198,521,186,476,192,451,182,422,181,364,177,335" shape="poly">
 </map>
+
 
 <div id="infoBox"></div>
 
