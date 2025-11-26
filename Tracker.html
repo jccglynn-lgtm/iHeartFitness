@@ -31,6 +31,7 @@
     </div>
 </header>
 
+<section class="tracker-wrapper">
 <section class="tracker">
     <div class="tracker-tabs">
         <button class="tracker-tab active" data-tab="water">Water</button>
@@ -62,7 +63,7 @@
         <img src="images/Water_bottle.png"  class="water-icon">
     </div>
     <div class="water-row">
-        <input type="number" class="custom-input" placeholder="ml">
+        <input type="number" class="custom-inputW" placeholder="ml">
         <span>custom ml</span>
         <img src="images/Question_bottle.png"  class="water-icon">
     </div>       
@@ -73,6 +74,48 @@
     </div>
     <div class="tracker-panel" id="calories">
         <p>Water tracker test content</p>
+        <div class="cal-row">
+            <div class="cal-box" data-value="100"></div><!-- ClickBoxes for tabs-->
+            <span>100 cal</span>
+        <img src="images/Apple.png" class="cal-icon">  <!-- Text to go alongside box-->
+    </div>    
+    <div class="cal-row">
+        <div class="cal-box" data-value="250"></div>
+        <span>250 cal</span>  
+        <img src="" class="cal-icon">  
+    </div> 
+    <div class="cal-row">
+        <div class="cal-box" data-value="500"></div>
+        <span>500 cal</span>
+        <img src=""  class="cal-icon">
+    </div>
+    <div class="cal-row">
+        <div class="cal-box" data-value="1000"></div>
+        <span>1000 cal</span>
+        <img src=""  class="cal-icon">
+    </div>
+    <div class="cal-row">
+        <input type="number" class="custom-inputC" placeholder="cal">
+        <span>custom cal</span>
+        <img src=""  class="cal-icon">
+    </div>       
+        <p>Total cal: <span id="cal-total">0</span></p>
+    </div>
+    </div>    
+</section>
+    <section class="tracker-right">
+        <h2>Weekly Water Intake</h2>
+
+        <div class="bar-row">
+        <span>Today</span>
+        <div class="bar" id="today-bar"></div>
+        <span class="bar-value" id="today-ml">0 ml</span>
+    </div>
+
+    <div class="bar-row">
+        <span>Recommended</span>
+        <div class="bar recommended-bar" id="recommended-bar"></div>
+        <span class="bar-value" id="recommended-ml">2000 ml</span>
     </div>    
 </section>
 <script src="js/Tracker.js"></script>
