@@ -400,6 +400,87 @@ body {
     margin: 0;
 }
 
+/* Video section */
+.motivation-section {
+    padding: 100px 20px;
+    background: rgb(161, 188, 197);
+}
+.motivation-section .section-title {
+    color: #ffffff;
+}
+.motivation-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.video-player-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.video-player-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    background: #000000;
+}
+/* video controls styling */
+.video-player-container video::webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+/* audio section */
+.audio-intro-box {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 35px;
+    background: #1a1a1a;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+}
+.audio-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.audio-emoji {
+    font-size: 40px;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.audio-header h3 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+.audio-description {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.audio-intro-box audio {
+    width: 100%;
+    max-width: 550px;
+    height: 50px;
+    border-radius: 25px;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+
 /* responsive design different devices */
 
 @media(max-width: 1024px) {
@@ -458,6 +539,16 @@ body {
     }
     .contact-wrapper {
         gap: 30px;
+    }
+    .motivation-section {
+        padding: 80px 20px;
+    }
+    .motivation-section .section-subtitle {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .video-player-container {
+        border-radius: 16px;
     }
 }
 
@@ -560,6 +651,40 @@ body {
     .contact-wrapper {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    .motivation-section {
+        padding: 60px 20px;
+    }
+    .motivation-section .section-title {
+        font-size: 36px;
+    }
+    .motivation-section .section-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .video-player-container {
+        border-radius: 12px;
+    }
+    .audio-intro-box {
+        padding: 25px 20px;
+        margin-bottom: 30px;
+    }
+    .audio-emoji {
+        font-size: 32px;
+    }
+    .audio-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .audio-header h3 {
+        font-size: 22px;
+    }
+    .audio-description {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .audio-intro-box audio {
+        height: 45px;
     }
 }
 
