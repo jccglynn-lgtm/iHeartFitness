@@ -559,3 +559,22 @@ body {
         gap: 30px;
     }
 }
+
+.site-footer {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  margin-top: auto;
+  text-align: center;
+}
+
+.site-footer h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #4CAF50;
+}
+
+.site-footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
