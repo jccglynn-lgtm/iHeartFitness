@@ -28,7 +28,7 @@ body {
   line-height: 1.6;
   padding: 20px;
   background-color: #ffffff;
-  border-left: 5px solid #2196F3;
+  border-left: 5px solid #000;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
