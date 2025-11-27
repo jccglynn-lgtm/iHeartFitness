@@ -117,10 +117,14 @@ a {
         gap: 30px;
         margin: 40px auto;
         justify-content: center;
+                width: 50%;
+        margin-right: 700px;
+        margin-top: -650px;
     }
 
     .bmi-left {
         max-width: 400px;
+
     }
 
     .bmi-right {
@@ -142,6 +146,10 @@ a {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        margin-top: 0;
     }
 
     .bmi-left, 
