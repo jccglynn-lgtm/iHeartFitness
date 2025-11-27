@@ -309,6 +309,94 @@ body {
     margin: 0;
 }
 
+/* Get In Touch */
+
+.contact-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* form */
+.contact-form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #2CAF50;
+}
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover {
+    background-color: #45a049;
+}
+/* contact info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.info-item {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.info-item h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.info-item p {
+    color: #668;
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* responsive design different devices */
 
 @media(max-width: 1024px) {
@@ -343,6 +431,7 @@ body {
     .section-text {
         font-size: 17px;
     }
+
     .features-section {
         padding: 80px 20px;
     }
@@ -353,6 +442,7 @@ body {
     .section-subtitle {
         margin-bottom: 50px;
     }
+
     .spotlight-wrapper {
         gap: 40px;
     }
@@ -362,6 +452,9 @@ body {
     .profile-pic {
         width: 100px;
         height: 100px;
+    }
+    .contact-wrapper {
+        gap: 30px;
     }
 }
 
@@ -394,6 +487,7 @@ body {
     .Phi_tness_logo {
         font-size: 30px;
     }
+
     .btn {
         padding: 8px 12px;
         font-size: 20px;
@@ -416,6 +510,7 @@ body {
         font-size: 16px;
         line-height: 1.7;
     }
+
     .features-section {
         padding: 60px 20px;
     }
@@ -429,6 +524,7 @@ body {
     .feature-title {
         font-size: 20px;
     }
+
     .spotlight-section {
         padding: 60px 20px;
     }
@@ -454,5 +550,12 @@ body {
     .member-testimony {
         font-size: 16px;
         text-align: center;
+    }
+    .contact-section {
+        padding: 60px 20px;
+    }
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
