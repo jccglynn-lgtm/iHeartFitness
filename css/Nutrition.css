@@ -44,7 +44,6 @@ a {
 
 }
 .bmi-section {
-    display: flex;
     justify-content: space-between;
     gap: 25px;
     margin-top: -600px;
@@ -58,6 +57,7 @@ a {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 12px;
+    width: clamp(700px, 48vw, 1500px);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
