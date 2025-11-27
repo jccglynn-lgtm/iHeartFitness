@@ -68,3 +68,61 @@
     font-size: clamp(.9rem, 1vw, 1.2rem);
     margin-right: .7rem;
 }
+.cal-row {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: clamp(1.5rem, 1vw, 3rem);
+}
+.cal-box { /*Click box styling*/
+    width: 22px;
+    height: 22px;
+    background: #e0f7ff;
+    border: 2px solid #60c0ff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: .7rem;
+    display: inline-block;
+    transition: background 0.2s;
+}
+.cal-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.tracker-right {
+    padding: 1rem;
+    width: 40%;
+}
+
+.bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.bar-row span {
+    width: 110px;
+    font-weight: bold;
+}
+
+.bar {
+    height: 20px;
+    background: #60c0ff;
+    border-radius: 6px;
+    flex-grow: 1;
+    margin-right: 10px;
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+.recommended-bar {
+    background: #a4ffd3; /* softer greenish color */
+}
+
+.bar-value {
+    width: 80px;
+    text-align: right;
+}
