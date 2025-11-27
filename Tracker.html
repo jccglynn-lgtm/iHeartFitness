@@ -6,6 +6,7 @@
     <title> Phi.tness - Tracker </title>
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="css/Tracker.css">
+    <link rel="icon" type="image/png" href="images/Placeholder.png">
 </head>
 <body>
 
@@ -16,7 +17,7 @@
     <div class="header-wrapper">
         
         <div class="logo-container">
-            <img src="images/Placeholder.png" alt="Blank temporary">
+            <img src="images/Placeholder_modified.png" alt="Blank temporary">
             <h1 class="Phi_tness_logo">
                 <a href="index.html">Phi.tness</a>
             </h1>
@@ -140,11 +141,53 @@
     </div>
 
     <div class="tracker-panelR" id="r-calories">
-        <p>Calorie Summary Coming Soon</p>
+        <h2>Calorie Summary</h2>
+
+        <div class="bar-row">
+        <span>Today</span>
+        <div class="bar cal-bar" id="cal-today-bar"></div>
+        <span class="bar-value" id="cal-today-total">0 cal</span>
+    </div>
+
+    <div class="bar-row">
+        <span>Recommended</span>
+        <div class="bar recommended-bar cal-bar" id="cal-recommended-bar"></div>
+        <span class="bar-value" id="cal-recommended-total">2000 cal</span>
+    </div>
+
+    <h3>Weekly Calorie Intake</h3>
+
+    <div class="bar-row"><span>Mon</span><div class="bar cal-bar" id="cal-mon"></div></div>
+    <div class="bar-row"><span>Tue</span><div class="bar cal-bar" id="cal-tue"></div></div>
+    <div class="bar-row"><span>Wed</span><div class="bar cal-bar" id="cal-wed"></div></div>
+    <div class="bar-row"><span>Thu</span><div class="bar cal-bar" id="cal-thu"></div></div>
+    <div class="bar-row"><span>Fri</span><div class="bar cal-bar" id="cal-fri"></div></div>
+    <div class="bar-row"><span>Sat</span><div class="bar cal-bar" id="cal-sat"></div></div>
+    <div class="bar-row"><span>Sun</span><div class="bar cal-bar" id="cal-sun"></div></div>
+
     </div>
 </section>
-
 </section>
+<div class="daily-progress-box">
+    <p id="water-progress">Water progress will appear here.</p>
+    <p id="calorie-progress">Calorie progress will appear here.</p>
+</div>
+<footer class="site-footer">
+  <div class="footer-wrapper">
+    <h3>Terms and Conditions</h3>
+    <p>
+      By using this website, you agree to the following terms and conditions.
+      All content is provided for informational purposes only and should not
+      replace professional fitness or medical advice.
+    </p>
+    <p>
+      © 2025 Phi.tness. All rights not reserved.
+    </p>
+  </div>
+</footer>
+
+
 <script src="js/Tracker.js"></script>
 </body>
+
 </html>
