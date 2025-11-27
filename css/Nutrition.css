@@ -107,27 +107,103 @@ a {
 .bmi-right h2 {
     margin-bottom: 10px;
 }
-@media(max-width: 2560px) {
-    .bmi-section{
-        margin-right: 0;
-        margin-top: 0;
+/* ------------------------------- */
+/* 1440px — NORMAL LAPTOPS         */
+/* ------------------------------- */
+@media (max-width: 1440px) {
+
+    .bmi-section {
+        max-width: 1000px;
+        gap: 30px;
+        margin: 40px auto;
+        justify-content: center;
     }
 
-    .bmi-left, .bmi-right {
+    .bmi-left {
+        max-width: 400px;
+    }
+
+    .bmi-right {
+        max-width: 500px;
         text-align: center;
     }
-    .content{
-        text-align: center;
+
+    .block {
+        width: 85%;
     }
+}
+
+/* ------------------------------- */
+/* 1024px — SMALL LAPTOPS/TABLETS  */
+/* ------------------------------- */
+@media (max-width: 1024px) {
+
     .bmi-section {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
-    .container {
-    display: flex;
-    gap: 40px;
+
+    .bmi-left, 
+    .bmi-right {
+        width: 90%;
+        max-width: 550px;
+    }
+
+    .block {
+        margin-left: 0;
+        width: 95%;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
 }
-.block {
-    width: 100%;
-    margin-left: 0;
-}
+
+/* ------------------------------- */
+/* 2560px — BIG MONITORS / 4K      */
+/* ------------------------------- */
+@media (min-width: 2560px) {
+
+    .content {
+        max-width: 1300px;
+        font-size: 22px;
+    }
+
+    .block {
+        max-width: 1300px;
+        padding: 35px;
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+            margin-left: 775px;
+            
+    }
+
+    h1, h2 {
+        font-size: 62px;
+    }
+
+    .bmi-section {
+        max-width: 2000px;
+        gap: 80px;
+        margin-top: -800px;
+        width: 50%;
+    }
+
+    .bmi-left input,
+    .bmi-left select {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    .bmi-left button {
+        font-size: 22px;
+        padding: 18px;
+    }
+
+    p, li {
+        font-size: 22px;
+        line-height: 1.85;
+    }
 }
