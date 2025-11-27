@@ -77,7 +77,7 @@
         <div class="cal-row">
             <div class="cal-box" data-value="100"></div><!-- ClickBoxes for tabs-->
             <span>100 cal</span>
-        <img src="images/Apple.png" class="cal-icon">  <!-- Text to go alongside box-->
+            <img src="images/Apple.png" class="cal-icon">  <!-- Text to go alongside box-->
     </div>    
     <div class="cal-row">
         <div class="cal-box" data-value="250"></div>
@@ -103,20 +103,47 @@
     </div>
     </div>    
 </section>
-    <section class="tracker-right">
-        <h2>Weekly Water Intake</h2>
+<section class="tracker-right">
+    <div class="tracker-tabsR">
+        <button class="tracker-tabR active" data-tab="r-water">Water</button>
+        <button class="tracker-tabR" data-tab="r-workout">Workout</button>
+        <button class="tracker-tabR" data-tab="r-calories">Calories</button>
+    </div>
+    <div class="tracker-panelR active" id="r-water">
+        <h2>Water Summary</h2>
 
         <div class="bar-row">
-        <span>Today</span>
-        <div class="bar" id="today-bar"></div>
-        <span class="bar-value" id="today-ml">0 ml</span>
+            <span>Today</span>
+            <div class="bar" id="today-bar"></div>
+            <span class="bar-value" id="today-ml">0 ml</span>
+        </div>
+
+        <div class="bar-row">
+            <span>Recommended</span>
+            <div class="bar recommended-bar" id="recommended-bar"></div>
+            <span class="bar-value" id="recommended-ml">2000 ml</span>
+        </div>
+
+        <h3>Weekly Water Intake</h3>
+
+        <div class="bar-row"><span>Mon</span><div class="bar" id="bar-mon"></div></div>
+        <div class="bar-row"><span>Tue</span><div class="bar" id="bar-tue"></div></div>
+        <div class="bar-row"><span>Wed</span><div class="bar" id="bar-wed"></div></div>
+        <div class="bar-row"><span>Thu</span><div class="bar" id="bar-thu"></div></div>
+        <div class="bar-row"><span>Fri</span><div class="bar" id="bar-fri"></div></div>
+        <div class="bar-row"><span>Sat</span><div class="bar" id="bar-sat"></div></div>
+        <div class="bar-row"><span>Sun</span><div class="bar" id="bar-sun"></div></div>
     </div>
 
-    <div class="bar-row">
-        <span>Recommended</span>
-        <div class="bar recommended-bar" id="recommended-bar"></div>
-        <span class="bar-value" id="recommended-ml">2000 ml</span>
-    </div>    
+    <div class="tracker-panelR" id="r-workout">
+        <p>Workout Summary Coming Soon</p>
+    </div>
+
+    <div class="tracker-panelR" id="r-calories">
+        <p>Calorie Summary Coming Soon</p>
+    </div>
+</section>
+
 </section>
 <script src="js/Tracker.js"></script>
 </body>

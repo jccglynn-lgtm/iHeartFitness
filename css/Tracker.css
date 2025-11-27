@@ -7,6 +7,7 @@
     font-size: clamp(0.9rem, 1vw, 1.4rem);
     gap: clamp(8px, 2vw, 40px);
 }
+
 .tracker-tabs {
     display: flex;
     gap: 0.25rem;
@@ -24,6 +25,7 @@
 .tracker-tab.active {
     background: #fff;
 }
+
 .tracker-panel {
     display: none;
     border-top: 1px solid #ccc;
@@ -32,7 +34,8 @@
 .tracker-panel.active {
     display: block;
 }
-.water-box { /*Click box styling*/
+
+.water-box {
     width: 22px;
     height: 22px;
     background: #e0f7ff;
@@ -51,15 +54,16 @@
     width: 100%;
     font-size: clamp(1.5rem, 1vw, 3rem);
 }
-.water-row span { /* Water images in line */
+.water-row span {
     flex: 1;
     margin-left: .5rem;
 }
-.water-icon { /* Water icons */
+.water-icon {
     width: 30px;
     height: 30px;
     object-fit: contain;
 }
+
 .custom-input {
     width: 4rem;
     padding: 1rem .4rem;
@@ -68,15 +72,22 @@
     font-size: clamp(.9rem, 1vw, 1.2rem);
     margin-right: .7rem;
 }
+
 .cal-row {
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
     margin-bottom: 1rem;
     width: 100%;
     font-size: clamp(1.5rem, 1vw, 3rem);
 }
-.cal-box { /*Click box styling*/
+.cal-row span {
+    flex-grow: 1;
+    display: inline-block;
+    margin-left: .5rem;
+    width: auto;
+}
+.cal-box {
     width: 22px;
     height: 22px;
     background: #e0f7ff;
@@ -92,37 +103,83 @@
     height: 30px;
     object-fit: contain;
 }
+
 .tracker-right {
-    padding: 1rem;
-    width: 40%;
+    width: clamp(300px, 40vw, 1400px);
+    border: 1px solid #626262;
+    border-radius: clamp(8px, 1vw, 25px);
+    padding: clamp(10px, 2vw, 40px);
+    font-size: clamp(0.9rem, 1vw, 1.4rem);
+    gap: clamp(8px, 2vw, 40px);
+    margin: 3rem 3rem 0 0;
 }
 
 .bar-row {
     display: flex;
     align-items: center;
+    gap: 1rem;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
-.bar-row span {
-    width: 110px;
-    font-weight: bold;
+.bar-row span:first-child {
+    width: 6rem;
+    display: inline-block;
 }
 
 .bar {
+    width: 0;
     height: 20px;
     background: #60c0ff;
     border-radius: 6px;
-    flex-grow: 1;
     margin-right: 10px;
     transition: width 0.3s ease;
-    width: 0%;
 }
 
 .recommended-bar {
-    background: #a4ffd3; /* softer greenish color */
+    background: #a4ffd3;
 }
 
 .bar-value {
     width: 80px;
-    text-align: right;
+    white-space: nowrap;
+}
+
+.tracker-tabsR {
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.tracker-tabR {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #eee;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.tracker-tabR.active {
+    background: #fff;
+}
+
+.tracker-panelR {
+    display: none;
+    border-top: 1px solid #ccc;
+    padding-top: .5rem;
+    font-size: 1.1rem;
+}
+
+.tracker-panelR.active {
+    display: block;
+}
+
+.tracker-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
 }
