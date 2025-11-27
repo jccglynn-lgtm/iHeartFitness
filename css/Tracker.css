@@ -1,11 +1,12 @@
 .tracker {/* Surrounding tracker box*/
     width: clamp(300px, 40vw, 1400px); /*Dynamic sizing*/
     margin: 3rem 0 0 3rem;
-    border: 1px solid #626262;
+    border: 1px solid #d0d0d0;
     border-radius: clamp(8px, 1vw, 25px);
     padding: clamp(10px, 2vw, 40px);
     font-size: clamp(0.9rem, 1vw, 1.4rem);
     gap: clamp(8px, 2vw, 40px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .tracker-tabs {
@@ -109,12 +110,13 @@
 
 .tracker-right {
     width: clamp(300px, 40vw, 1400px);
-    border: 1px solid #626262;
+    border: 1px solid #d0d0d0;
     border-radius: clamp(8px, 1vw, 25px);
     padding: clamp(10px, 2vw, 40px);
     font-size: clamp(0.9rem, 1vw, 1.4rem);
     gap: clamp(8px, 2vw, 40px);
     margin: 3rem 3rem 0 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .bar-row {
