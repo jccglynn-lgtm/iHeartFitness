@@ -1,7 +1,7 @@
    //==========================
    //BMI calculator on java script
    //==========================
-function calculateBMI() {
+function calcBMI() {
     let weight = parseFloat(document.getElementById("weight").value);
     let height = parseFloat(document.getElementById("height").value);
     if (!weight || !height || height <= 0) {
@@ -10,7 +10,7 @@ function calculateBMI() {
     }
     let bmi = weight / (height * height);
 
-    document.getElementById("bmiResult").innerText = bmi.toFixed(2);
+    document.getElementById("bmi-output").textContent = bmi.toFixed(1);
 
     if (bmi > 29.9) {
         alert("You are obese. It's advisable to seek guidance from a healthcare professional for a comprehensive health plan.");

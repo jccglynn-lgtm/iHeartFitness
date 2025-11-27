@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phi.tness/diet</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Nutrition.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<!-- header -->
+ 
+<header class="main-header">
+    
+    <div class="header-wrapper">
+        
+        <div class="logo-container">
+            <img src="images/Placeholder.png" alt="Blank temporary">
+            <h1 class="Phi_tness_logo">
+                <a href="index.html">Phi.tness</a>
+            </h1>
+        </div>
+<!-- Buttons for homepage -->       
+        <div class="homepage-buttons">
+            <a href="Health.html" class="btn">Health</a>
+            <a href="Nutrition.html" class="btn">Nutrition</a>
+            <a href="Tracker.html" class="btn">Tracker</a>
+        </div>
+        
+    </div>
+</header>
+<!--conect operation to  (log and reg) button-->
+<!--header-->
+
+<body>
+<main>
+    <div class="column">
+    <div class="content">
+
+        <h1>Nutrition</h1>
+
+        <section class="block">
+            <h2>About Diet</h2>
+            <p>
+                Eat is a part of health Lifestyle in our life, it have nutrition and micro nutrition,
+                which help our body to be strong and fit. They are also cause impact on our mood and
+                energy level. The wrong food choice can lead to health problems like obesity,
+                <a href="https://my.clevelandclinic.org/health/diseases/7104-diabetes">diabete</a>, and <a href="https://my.clevelandclinic.org/health/diseases/24129-heart-disease">Heart Disease</a>.
+                So, right diet is very important for our life.
+            </p>
+        </section>
+
+        <section class="block">
+            <h2>Here are some tips for a healthy diet:</h2>
+            <ul>
+                <li>Eat a variety of foods: Include fruits, vegetables, whole grains, lean proteins, and healthy fats in your diet.</li>
+                <li>Control portion sizes: Be mindful of portion sizes to avoid overeating.</li>
+                <li>Limit processed foods: Reduce intake of processed and sugary foods.</li>
+                <li>Stay hydrated: Drink plenty of water throughout the day.</li>
+                <li>Plan meals: Prepare meals in advance to ensure balanced nutrition.</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2>About BMI</h2>
+            <p>
+                BMI is a simple measure of body fat based on height and weight, used
+                for adults to check if their weight is healthy.
+            </p>
+        </section>
+
+    </div>
+</main>
+ <!--BMI calculator on java script-->
+<section class="bmi-section">
+
+    <div class="bmi-left">
+        <h3>Calculate Your BMI</h3>
+
+        <label>Age 16+:</label>
+        <input type="number" id="age">
+
+        <label>Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label>Weight (kg):</label>
+        <input type="number" id="weight">
+
+        <label>Height (m):</label>
+        <input type="number" step="0.01" id="height">
+
+        <button onclick="calcBMI()">Calculate BMI</button>
+
+        <p class="bmi-result">Your BMI: <span id="bmi-output"></span></p>
+    </div>
+    </div>
+
+</section>
+            </main>     
+    
+
+</body>
+</html>
