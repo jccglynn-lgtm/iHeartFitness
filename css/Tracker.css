@@ -81,12 +81,14 @@
     width: 100%;
     font-size: clamp(1.5rem, 1vw, 3rem);
 }
+
 .cal-row span {
     flex-grow: 1;
     display: inline-block;
     margin-left: .5rem;
     width: auto;
 }
+
 .cal-box {
     width: 22px;
     height: 22px;
@@ -98,6 +100,7 @@
     display: inline-block;
     transition: background 0.2s;
 }
+
 .cal-icon {
     width: 30px;
     height: 30px;
@@ -145,6 +148,10 @@
     white-space: nowrap;
 }
 
+.cal-bar {
+    background: #ffb360;
+}
+
 .tracker-tabsR {
     display: flex;
     gap: 0.25rem;
@@ -183,6 +190,27 @@
     gap: 2rem;
     width: 100%;
 }
+
+.daily-progress-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+}
+
+#water-progress {
+    font-size: 2rem;
+    color: #000000;
+    margin: 3rem 0;
+}
+
+#calorie-progress {
+    font-size: 2rem;
+    color: #707070;
+}
+
 @media (max-width: 900px) {
     .tracker-wrapper {
         flex-direction: column;
