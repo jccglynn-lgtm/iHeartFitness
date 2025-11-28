@@ -175,10 +175,12 @@
         <div class="contact-wrapper">
             <!-- Contact form -->
             <div class="contact-form-container">
-                <form action="have to put access key here" method="POST" class="contact-form">
+                <!-- used "Web3Forms" to make the form llok a bit more professional-->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
                     <!-- Web3Form Access key -->
-                    <input type="hidden" name="access_key" value="have to put Access_key_here">
+                    <input type="hidden" name="access_key" value="a5002b92-026f-4cc0-bcdb-53599be23cc7">
+                    <input type="checkbox" name="botcheck" style="display:none;">
 
                     <!-- Name field -->
                     <div class="form-group">
@@ -195,7 +197,7 @@
                     <!-- Subject field -->
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="name" required>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
 
                     <!-- Message field -->
@@ -206,8 +208,6 @@
 
                     <!-- Submit button -->
                     <button type="submit" class="submit-btn">Send Message</button>
-
-                    <input type="hidden" name="_next" value=".com/index.html">
                 </form>
             </div>
 
