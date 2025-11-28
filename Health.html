@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Health</title>
   <link rel="stylesheet" href="css/Style.css">
   <link rel="stylesheet" href="css/Health.css">
   <link rel="icon" type="image/png" href="images/Placeholder.png">
 </head>
 <body>
-
+  <!-- General header for all pages -->
   <header class="main-header">
     <div class="header-wrapper">
         
         <div class="logo-container">
-            <img src="images/Placeholder_modified.png" alt="Blank temporary">
+            <img src="images/Placeholder_modified.png" alt="Image of webpage logo">
             <h1 class="Phi_tness_logo">
                 <a href="index.html">Phi.tness</a>
             </h1>
         </div>
-        
+        <!-- Buttons on header -->
         <div class="homepage-buttons">
             <a href="Health.html" class="btn">Health</a>
             <a href="Nutrition.html" class="btn">Nutrition</a>
@@ -27,9 +28,9 @@
     </div>
   </header>
 
-
+  <!-- Image and explanation box for main part of the page -->
   <div class="content-wrapper">
-    <img src="images/person.png" usemap="#image-map" id="human">
+    <img src="images/person.png" usemap="#image-map" id="human" alt="A simple drawing of a person used for mapping">
 
     <div id="pageInfo">
       <h2>About This Page</h2>
@@ -41,7 +42,7 @@
     </div>
   </div>
 
-
+<!-- Coordinates and linking for clickable areas in body image -->
 <map name="image-map">
     <area alt="arms1" title="arms" href="#infoBox"
           data-text="Dips are an excellent exercise to isolate the muscles in the arms and are also scalable to your personal ability. You can start as easy as your legs infront of you on the floor to being fully off the ground with added weights."
@@ -74,9 +75,10 @@
           coords="201,561,222,558,231,475,224,424,222,408,230,383,228,337,174,339,184,426,191,451,187,466,199,526,194,544" shape="poly">
 </map>
 
-
+<!-- Box that appears when body is clicked -->
 <div id="infoBox"></div>
 
+<!-- Terms and Conditions footer -->
 <footer class="site-footer">
   <div class="footer-wrapper">
     <h3>Terms and Conditions</h3>
