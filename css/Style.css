@@ -407,6 +407,7 @@ body {
 }
 .motivation-section .section-title {
     color: #ffffff;
+    text-shadow: 0 0 20px rgba(65, 47, 83, 0.5);
 }
 .motivation-section .section-subtitle {
     color: rgba(255, 255, 255, 0.95);
