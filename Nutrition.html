@@ -36,7 +36,7 @@
 
 <body>
 <main>
-    <div class="column">
+
     <div class="content">
 
         <h1>Nutrition</h1>
@@ -44,11 +44,11 @@
         <section class="block">
             <h2>About Diet</h2>
             <p>
-                Eat is a part of health Lifestyle in our life, it have nutrition and micro nutrition,
-                which help our body to be strong and fit. They are also cause impact on our mood and
-                energy level. The wrong food choice can lead to health problems like obesity,
-                <a href="https://my.clevelandclinic.org/health/diseases/7104-diabetes">diabete</a>, and <a href="https://my.clevelandclinic.org/health/diseases/24129-heart-disease">Heart Disease</a>.
-                So, right diet is very important for our life.
+                Eating is a part of a healthy lifestyle in our life. It provides nutrition and micronutrients,
+                which help our body to be strong and fit. They also impact our mood and
+                energy level. Wrong food choices can lead to health problems like obesity,
+                <a href="https://my.clevelandclinic.org/health/diseases/7104-diabetes">diabetes</a>, and <a href="https://my.clevelandclinic.org/health/diseases/24129-heart-disease">heart diseases</a>.
+                So, the right diet is very important for our life.
             </p>
         </section>
 
@@ -63,57 +63,66 @@
             </ul>
         </section>
 
-        <section class="block">
+        <section class="block bmi-block">
             <h2>About BMI</h2>
-            <p>
-                BMI is a simple measure of body fat based on height and weight, used
-                for adults to check if their weight is healthy.
-            </p>
+
+            <div class="bmi-container">
+                <div class="bmi-info">
+                    <p>
+                        BMI (Body Mass Index) is a simple measure of body fat based on height and weight, 
+                        used for adults to check if their weight is healthy.
+                    </p>
+
+                    <h3>BMI Categories:</h3>
+                    <ul>
+                        <li><strong>Underweight:</strong> BMI less than 18.5</li>
+                        <li><strong>Normal weight:</strong> BMI 18.5 - 24.9</li>
+                        <li><strong>Overweight:</strong> BMI 25 - 29.9</li>
+                        <li><strong>Obese:</strong> BMI 30 or greater</li>
+                    </ul>
+                </div>
+
+                <div class="bmi-calculator">
+                    <h3>Calculate Your BMI</h3>
+                    
+                    <label for="age">Age 16+:</label>
+                    <input type="number" id="age" min="16">
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender">
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    <label for="weight">Weight (Kg):</label>
+                    <input type="number" id="weight" min="1" steps="0.1">
+
+                    <label for="height">Height (m):</label>
+                    <input type="number" id="height" min="0.5" max="3" step="0.01">
+
+                    <button onclick="calcBMI=calcBMI()">Calculate BMI</button>
+
+                    <p class="bmi-result">Your BMI: <span id="bmi-output">--</span></p>
+                </div>
+            </div>
         </section>
 
     </div>
 </main>
- <!--BMI calculator on java script-->
-<section class="bmi-section">
 
-    <div class="bmi-left">
-        <h3>Calculate Your BMI</h3>
-
-        <label>Age 16+:</label>
-        <input type="number" id="age">
-
-        <label>Gender:</label>
-        <select id="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
-
-        <label>Weight (kg):</label>
-        <input type="number" id="weight">
-
-        <label>Height (m):</label>
-        <input type="number" step="0.01" id="height">
-
-        <button onclick="calcBMI()">Calculate BMI</button>
-
-        <p class="bmi-result">Your BMI: <span id="bmi-output"></span></p>
+<footer class="site-footer">
+    <div class="footer-wrapper">
+        <h3>Terms and Conditions</h3>
+        <p>
+            By using this website, you agree to the following terms and conditions.
+            All content is provided for informational purposes only and should not
+            replace professional fitness or medical advice.
+        </p>
+        <p>
+            © 2025 Phi.tness. All rights not reserved.
+        </p>
     </div>
-    </div>
-
-</section>
-            </main>     
-            <footer class="site-footer">
-  <div class="footer-wrapper">
-    <h3>Terms and Conditions</h3>
-    <p>
-      By using this website, you agree to the following terms and conditions.
-      All content is provided for informational purposes only and should not
-      replace professional fitness or medical advice.
-    </p>
-    <p>
-      © 2025 Phi.tness. All rights not reserved.
-    </p>
-  </div>
 </footer>
     
 
