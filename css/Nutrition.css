@@ -3,9 +3,6 @@
     width: 90%;            
     margin: 20px auto;
     padding: 10px;
-  .columns {
-  flex-direction: column;
-     }
 }
 /* headers */
 h1, h2 {
@@ -20,15 +17,16 @@ h1, h2 {
     border-radius: 20px;
     margin-bottom: 25px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-left: 350px;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
+    max-width: 700px;
 }
 
 
 p, li {
     font-size: 17px;
-    line-height: 1.6;
-    text-align: auto;      
+    line-height: 1.6;      
 }
 
 ul {
@@ -43,27 +41,29 @@ a {
     text-decoration: none;
 
 }
+a:hover {
+    text-decoration: underline;
+}
+
 .bmi-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-    margin-top: -600px;
-    margin-right: 800px;
-    align-items: flex-start;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 
 .bmi-left {
-    flex: 1;
     background: #f9f9f9;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
 }
 
 .bmi-left h3 {
     text-align: center;
     margin-bottom: 15px;
+    font-size: 24px;
 }
 
 .bmi-left label {
@@ -80,6 +80,7 @@ a {
     border-radius: 8px;
     border: 1px solid #bcbcbc;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .bmi-left button {
@@ -92,6 +93,8 @@ a {
     border-radius: 10px;
     cursor: pointer;
     border: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
 }
 
 .bmi-left button:hover {
@@ -102,108 +105,144 @@ a {
     margin-top: 15px;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
 }
 
-.bmi-right h2 {
-    margin-bottom: 10px;
-}
 /* ------------------------------- */
-/* 1440px — NORMAL LAPTOPS         */
+/* 480px - SMALL PHONES         */
 /* ------------------------------- */
-@media (max-width: 1440px) {
+@media (max-width: 480px) {
 
-    .bmi-section {
-        max-width: 1000px;
-        gap: 30px;
-        margin: 40px auto;
-        justify-content: center;
+    h1 {
+        font-size: 28px;
     }
-
-    .bmi-left {
-        max-width: 400px;
+    h2 {
+        font-size: 22px;
     }
-
-    .bmi-right {
-        max-width: 500px;
-        text-align: center;
-    }
-
     .block {
-        width: 85%;
-    }
-}
-
-/* ------------------------------- */
-/* 1024px — SMALL LAPTOPS/TABLETS  */
-/* ------------------------------- */
-@media (max-width: 1024px) {
-
-    .bmi-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .bmi-left, 
-    .bmi-right {
-        width: 90%;
-        max-width: 550px;
-    }
-
-    .block {
-        margin-left: 0;
         width: 95%;
+        padding: 15px;
     }
-
     p, li {
-        font-size: 16px;
+        font-size: 15px;
+    }
+    .bmi-left {
+        padding: 15px;
+    }
+    .bmi-left h3 {
+        font-size: 20px;
     }
 }
 
 /* ------------------------------- */
-/* 2560px — BIG MONITORS / 4K      */
+/* 768px — TABLETS  */
 /* ------------------------------- */
-@media (min-width: 2560px) {
+@media (max-width: 768px) {
 
     .content {
-        max-width: 1300px;
-        font-size: 22px;
+        max-width: 750px;
+    }
+    .block {
+        max-width: 750px;
+        padding: 25px;
+    }
+    .bmi-section{
+        max-width: 600px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    p, li {
+        font-size: 18px;
+    }
+}
+
+/* ------------------------------- */
+/* 1024px — SMALL LAPTOPS     */
+/* ------------------------------- */
+@media (min-width: 1024px) {
+
+    .content {
+        max-width: 900px;
     }
 
     .block {
-        max-width: 1300px;
-        padding: 35px;
-        font-size: 22px;
-        margin-left: auto;
-        margin-right: auto;
-            margin-left: 775px;
-            
+        max-width: 900px;
+        padding: 30px;    
     }
-
-    h1, h2 {
-        font-size: 62px;
-    }
-
     .bmi-section {
-        max-width: 2000px;
-        gap: 80px;
-        margin-top: -800px;
-        width: 50%;
+        max-width: 700px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+}
+
+/* 1440px - NORMAL LAPTOPS */
+@media (min-width: 1440px) {
+    .content {
+        max-width: 1000px;
+    }
+    .block {
+        max-width: 1000px;
+        padding: 35px;
+    }
+    .bmi-section {
+        max-width: 800px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    p, li {
+        font-size: 19px;
+    }
+}
+
+/* 2560px - 4K MONITORS */
+@media (min-width: 2560px) {
+    .content {
+        max-width: 1400px;
+    }
+    .block {
+        max-width: 1400px;
+        padding: 45px;
+    }
+    .bmi-section {
+        max-width: 1000px;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    .bmi-left h3 {
+        font-size: 32px;
+    }
+    p, li {
+        font-size: 24px;
+        line-height: 1.8;
     }
 
     .bmi-left input,
     .bmi-left select {
-        font-size: 20px;
-        padding: 14px;
+        font-size: 22px;
+        padding: 16px;
     }
-
     .bmi-left button {
-        font-size: 22px;
-        padding: 18px;
+        font-size: 24px;
+        padding: 20px;
     }
-
-    p, li {
-        font-size: 22px;
-        line-height: 1.85;
+    .bmi-result {
+        font-size: 26px;
     }
 }
